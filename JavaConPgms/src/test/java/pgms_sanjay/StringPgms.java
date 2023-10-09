@@ -179,6 +179,22 @@ public class StringPgms {
 		}
 	}
 	@Test
+	public void findLengthOfTheStringWoutUsingLength()
+	{
+		String s="tester";
+		int i=0;
+		while(true)
+		{
+			try {
+				s.charAt(i);//t e s t
+				i++;//1 2 3 4
+			} catch (Exception e) {
+				System.out.println(i);//4
+				break;
+			}
+		}
+	}
+	@Test
 	public void occuranceOfEachCharacterInAStringUsingCollection()
 	{
 		String st="TestYantra";
@@ -405,9 +421,9 @@ public class StringPgms {
 	@Test
 	public void findOccuranceOfEachWordsInAString()
 	{
-		String str="I am from am i TestYantra";
+		String str="I am from am i  TestYantra";
 		String s = str.toLowerCase();
-		String[] st = s.split(" ");
+		String[] st = s.split("\\s+");
 		LinkedHashSet<String> set = new LinkedHashSet<String>();
 		for(int i=0;i<st.length;i++)
 		{
@@ -431,7 +447,7 @@ public class StringPgms {
 	{
 		String str="I am from am i TestYantra";
 		String s = str.toLowerCase();
-		String[] st = s.split(" ");
+		String[] st = s.split("\\s+");
 		LinkedHashMap<String, Object> map = new LinkedHashMap<String,Object>();
 		for(int i=0;i<st.length;i++)
 		{
@@ -455,7 +471,7 @@ public class StringPgms {
 	{
 		String str="I am from am i TestYantra";
 		String s = str.toLowerCase();
-		String[] st = s.split(" ");
+		String[] st = s.split("\\s+");
 		LinkedHashSet<String> set = new LinkedHashSet<String>();
 		for(int i=0;i<st.length;i++)
 		{
@@ -482,7 +498,7 @@ public class StringPgms {
 	{
 		String str="I am from am i TestYantra";
 		String s = str.toLowerCase();
-		String[] st = s.split(" ");
+		String[] st = s.split("\\s+");
 		LinkedHashMap<String, Object> map = new LinkedHashMap<String,Object>();
 		for(int i=0;i<st.length;i++)
 		{
@@ -509,7 +525,7 @@ public class StringPgms {
 	{
 		String str="I am from am i TestYantra";
 		String s = str.toLowerCase();
-		String[] st = s.split(" ");
+		String[] st = s.split("\\s+");
 		LinkedHashSet<String> set = new LinkedHashSet<String>();
 		for(int i=0;i<st.length;i++)
 		{
@@ -532,7 +548,7 @@ public class StringPgms {
 	{
 		String str="I am from am i TestYantra";
 		String s = str.toLowerCase();
-		String[] st = s.split(" ");
+		String[] st = s.split("\\s+");
 		LinkedHashMap<String, Object> map = new LinkedHashMap<String,Object>();
 		for(int i=0;i<st.length;i++)
 		{
@@ -553,7 +569,8 @@ public class StringPgms {
 	@Test
 	public void printCountOfCharacters()
 	{
-		String s="wwwpreethi";//w3p1r1e2t1h1i1
+		//String s="wwwpreethi";//w3p1r1e2t1h1i1
+		String s="aAbbacCd";
 		LinkedHashSet<Character> list = new LinkedHashSet<Character>();
 		for(int i=0;i<s.length();i++)
 		{
@@ -567,10 +584,10 @@ public class StringPgms {
 			if(ch==s.charAt(i))
 			{
 				count++;
-				System.out.print(ch);
+			//	System.out.print(ch);
 			}
 		}
-		System.out.print(count);
+		System.out.print(ch+""+count);
 		}
 	}
 	@Test
