@@ -227,17 +227,17 @@ public class StringPgms {
 		{
 			map.put(s.charAt(i), i);
 		}
-		for (Entry<Character, Object> m:map.entrySet()) 
+		for (Character m:map.keySet()) 
 		{
 			int count=0;
 			for(int i=0;i<s.length();i++)
 			{
-				if(m.getKey()==s.charAt(i))
+				if(m==s.charAt(i))
 				{
 					count++;
 				}
 			}
-			System.out.println(m.getKey()+" is repeating "+count+" times");
+			System.out.println(m+" is repeating "+count+" times");
 		}
 	}
 	@Test
