@@ -2,15 +2,15 @@
 <testng-results ignored="34" total="35" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-09T15:59:13 IST" name="Default suite" finished-at="2023-10-09T15:59:13 IST" duration-ms="47">
+  <suite started-at="2023-10-10T16:18:54 IST" name="Default suite" finished-at="2023-10-10T16:18:54 IST" duration-ms="56">
     <groups>
     </groups>
-    <test started-at="2023-10-09T15:59:13 IST" name="Default test" finished-at="2023-10-09T15:59:13 IST" duration-ms="47">
+    <test started-at="2023-10-10T16:18:54 IST" name="Default test" finished-at="2023-10-10T16:18:54 IST" duration-ms="56">
       <class name="pgms_sanjay.StringPgms">
-        <test-method signature="findLengthOfTheStringWoutUsingLength()[pri:0, instance:pgms_sanjay.StringPgms@485966cc]" started-at="2023-10-09T15:59:13 IST" name="findLengthOfTheStringWoutUsingLength" finished-at="2023-10-09T15:59:13 IST" duration-ms="6" status="PASS">
+        <test-method signature="occuranceOfEachCharacterInAStringUsingMap()[pri:0, instance:pgms_sanjay.StringPgms@485966cc]" started-at="2023-10-10T16:18:54 IST" name="occuranceOfEachCharacterInAStringUsingMap" finished-at="2023-10-10T16:18:54 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- findLengthOfTheStringWoutUsingLength -->
+        </test-method> <!-- occuranceOfEachCharacterInAStringUsingMap -->
       </class> <!-- pgms_sanjay.StringPgms -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
